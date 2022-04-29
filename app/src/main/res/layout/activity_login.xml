@@ -24,7 +24,7 @@
         android:layout_below="@+id/titleLabelTv"
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/montserrat_semibold"
-        android:text="Login to your account" />
+        android:text="@string/logging" />
 
 
 <!--Email-->

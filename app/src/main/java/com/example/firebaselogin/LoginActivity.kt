@@ -7,6 +7,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
+import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
@@ -32,6 +33,8 @@ class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        //Remove title bar
+        this.requestWindowFeature(Window.FEATURE_NO_TITLE);
     binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
