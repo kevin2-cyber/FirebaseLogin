@@ -1,13 +1,14 @@
 package com.example.firebaselogin
 
+
 import android.app.ProgressDialog
 import android.content.Intent
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.support.v7.app.ActionBar
 import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
+import androidx.appcompat.app.AppCompatActivity
 import com.example.firebaselogin.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 
