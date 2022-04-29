@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="28dp"
+    android:background="@drawable/bg_image"
     tools:context=".LoginActivity">
 
     <TextView
@@ -40,7 +41,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_semibold"
             android:hint="Email"
-            android:inputType="textEmailAddress" />
+            android:inputType="textEmailAddress"
+            android:textColor="#E1D0D0" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
