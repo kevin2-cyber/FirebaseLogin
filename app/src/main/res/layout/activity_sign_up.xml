@@ -58,13 +58,29 @@
             android:hint="Password"/>
     </com.google.android.material.textfield.TextInputLayout>
 
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/confPasswordTil"
+        app:passwordToggleEnabled="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passwordTil"
+        android:layout_centerInParent="true">
+
+        <EditText
+            android:id="@+id/ConfPasswordEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Confirm Password"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
     <!--Sign Up button-->
     <Button
         android:id="@+id/signupBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sign Up"
-        android:layout_below="@+id/passwordTil"
+        android:layout_below="@+id/confPasswordTil"
         android:layout_marginTop="10dp"/>
 
 

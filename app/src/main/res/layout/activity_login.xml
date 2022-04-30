@@ -41,9 +41,10 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_semibold"
             android:hint="Email"
+            android:importantForAutofill="no"
             android:inputType="textEmailAddress"
             android:textColor="#E1D0D0"
-            android:importantForAutofill="no" />
+            tools:ignore="TouchTargetSizeCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
 

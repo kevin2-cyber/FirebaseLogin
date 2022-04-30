@@ -30,6 +30,7 @@ class SignUpActivity : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
     private var email = ""
     private var password = ""
+    private var confirmPass = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -62,6 +63,7 @@ class SignUpActivity : AppCompatActivity() {
         // get data
         email = binding.emailEt.text.toString().trim()
         password = binding.passwordEt.text.toString().trim()
+        confirmPass =  binding.ConfPasswordEt.text.toString().trim()
 
         // validate data
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
@@ -70,6 +72,12 @@ class SignUpActivity : AppCompatActivity() {
         } else if (TextUtils.isEmpty(password)) {
             // password isn't entered
             binding.passwordEt.error = "Please enter password"
+        } else if (TextUtils.isEmpty(confirmPass)){
+            // password isn't confirmed
+            binding.ConfPasswordEt.error = "Please confirm password"
+        } else if(password != confirmPass) {
+            binding.passwordEt.error = "Password must be the same as confirm password"
+            binding.ConfPasswordEt.error = "Password must be the same as confirm password"
         } else if (password.length < 6){
             // password is less than 6
             binding.passwordEt.error = "Password must at least 6 characters long"
