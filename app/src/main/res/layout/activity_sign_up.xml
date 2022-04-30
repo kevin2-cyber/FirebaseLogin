@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
+    android:background="@drawable/bg_image"
     tools:context=".SignUpActivity">
 
     <TextView
@@ -71,6 +72,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
+            android:fontFamily="@font/montserrat_semibold"
             android:hint="Confirm Password"/>
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -80,8 +82,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sign Up"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textFontWeight="500"
+        android:textColor="#8B93BF"
         android:layout_below="@+id/confPasswordTil"
+        android:background="#121A4C"
         android:layout_marginTop="10dp"/>
+
 
 
 

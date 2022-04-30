@@ -41,9 +41,9 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_semibold"
             android:hint="Email"
+            android:textColor="#5468D6"
             android:importantForAutofill="no"
             android:inputType="textEmailAddress"
-            android:textColor="#E1D0D0"
             tools:ignore="TouchTargetSizeCheck" />
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -63,23 +63,28 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_semibold"
             android:hint="Password"
+            android:textColor="#4859B8"
             android:inputType="textPassword"
             android:importantForAutofill="no" />
     </com.google.android.material.textfield.TextInputLayout>
 
 <!--Login button-->
+
+    <!--Not having account Sign up-->
+
     <Button
         android:id="@+id/loginBtn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/passwordTil"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="25dp"
+        android:background="#121A4C"
         android:fontFamily="@font/montserrat_semibold"
-        android:text="login" />
+        android:text="login"
+        android:textColor="#8B93BF" />
 
-<!--Not having account Sign up-->
     <TextView
-        android:id="@+id/noAccountTv"
+        android:id="@+id/accountTv"
         style="@style/TextAppearance.MaterialComponents.Caption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -87,6 +92,21 @@
         android:layout_centerHorizontal="true"
         android:fontFamily="@font/montserrat_semibold"
         android:padding="5dp"
-        android:text="@string/no_account" />
+        android:text="Not having an account?" />
+
+    <TextView
+        android:id="@+id/noAccountTv"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingEnd="63dp"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/montserrat_semibold"
+        android:padding="5dp"
+        android:text="Sign up"
+        tools:ignore="RtlSymmetry" />
 
 </RelativeLayout>
