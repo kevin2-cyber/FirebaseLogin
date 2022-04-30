@@ -40,6 +40,7 @@
         android:layout_marginTop="20dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="Logout"
+        android:background="@drawable/logoutbtn_style"
         android:textAllCaps="false"/>
 
 </LinearLayout>

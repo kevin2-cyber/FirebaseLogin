@@ -86,7 +86,7 @@
         android:textFontWeight="500"
         android:textColor="#8B93BF"
         android:layout_below="@+id/confPasswordTil"
-        android:background="#121A4C"
+        android:background="@drawable/round_style"
         android:layout_marginTop="10dp"/>
 
 
