@@ -14,7 +14,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.example.firebaselogin.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 
-@Suppress("DEPRECATION", "DEPRECATION")
+// @Suppress("DEPRECATION", "DEPRECATION")
 class SignUpActivity : AppCompatActivity() {
 
     // ViewBinding

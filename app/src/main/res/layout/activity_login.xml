@@ -42,7 +42,8 @@
             android:fontFamily="@font/montserrat_semibold"
             android:hint="Email"
             android:inputType="textEmailAddress"
-            android:textColor="#E1D0D0" />
+            android:textColor="#E1D0D0"
+            android:importantForAutofill="no" />
 
     </com.google.android.material.textfield.TextInputLayout>
 
@@ -61,7 +62,8 @@
             android:layout_height="wrap_content"
             android:fontFamily="@font/montserrat_semibold"
             android:hint="Password"
-            android:inputType="textPassword" />
+            android:inputType="textPassword"
+            android:importantForAutofill="no" />
     </com.google.android.material.textfield.TextInputLayout>
 
 <!--Login button-->
