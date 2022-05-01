@@ -16,7 +16,7 @@ import com.example.firebaselogin.databinding.ActivityFullscreenBinding
  * An example full-screen activity that shows and hides the system UI (i.e.
  * status bar and navigation/system bar) with user interaction.
  */
-class MainActivity : AppCompatActivity() {
+class FullscreenActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityFullscreenBinding
     private lateinit var fullscreenContent: TextView

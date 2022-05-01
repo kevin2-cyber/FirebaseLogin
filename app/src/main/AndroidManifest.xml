@@ -13,7 +13,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FirebaseLogin">
         <activity
-            android:name=".MainActivity"
+            android:name=".FullscreenActivity"
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:exported="false"
             android:label="@string/title_activity_fullscreen"

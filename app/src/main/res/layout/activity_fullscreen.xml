@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/bg_image"
     android:theme="@style/ThemeOverlay.FirebaseLogin.FullscreenContainer"
-    tools:context=".MainActivity">
+    tools:context=".FullscreenActivity">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
          is needed to present your content, e.g. VideoView, SurfaceView,
