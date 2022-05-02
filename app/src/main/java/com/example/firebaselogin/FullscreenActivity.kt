@@ -2,6 +2,7 @@ package com.example.firebaselogin
 
 import androidx.appcompat.app.AppCompatActivity
 import android.annotation.SuppressLint
+import android.content.Intent
 import android.os.Build
 import android.os.Bundle
 import android.os.Handler
@@ -141,6 +142,11 @@ class FullscreenActivity : AppCompatActivity() {
     private fun delayedHide(delayMillis: Int) {
         hideHandler.removeCallbacks(hideRunnable)
         hideHandler.postDelayed(hideRunnable, delayMillis.toLong())
+    }
+
+    val btn = binding.dummyButton.setOnClickListener {
+        val intent = Intent(this, LoginActivity::class.java)
+        startActivity(intent)
     }
 
     companion object {
