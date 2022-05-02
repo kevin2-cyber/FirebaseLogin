@@ -1,5 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <item name="loginBtn" type="id">loginBtn</item>
-    <item name="noAccountTv" type="id">noAccountTv</item>
-</resources>
