@@ -3,6 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2125" />
+        <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/drawable/logout_btn.xml" value="0.2125" />
+        <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/drawable/round_style.xml" value="0.2125" />
+        <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/font/.xml" value="0.2765625" />
         <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/layout-w1240dp/activity_login2.xml" value="0.15829986613119143" />
         <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/layout-w936dp/activity_login2.xml" value="0.184765625" />
         <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/layout/activity_login.xml" value="0.1078125" />

@@ -13,7 +13,8 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:layout_marginTop="60dp"
-        android:text="Firebase login app using kotlin" />
+        android:text="Firebase login app using Kotlin"
+        android:fontFamily="@font/red_rose"/>
 
     <Button
         android:id="@+id/welcomeBtn"
