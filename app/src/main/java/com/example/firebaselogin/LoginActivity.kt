@@ -7,7 +7,6 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
-import androidx.appcompat.app.ActionBar
 import com.example.firebaselogin.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 
