@@ -1,54 +1,40 @@
-@file:Suppress("DEPRECATION")
-
 package com.example.firebaselogin
 
 import android.app.ProgressDialog
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
-import android.view.Window
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
-import androidx.appcompat.app.AppCompatActivity
 import com.example.firebaselogin.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 
-// @Suppress("DEPRECATION", "DEPRECATION")
 class LoginActivity : AppCompatActivity() {
-
-//    ViewBinding
+    //    ViewBinding
     private lateinit var binding: ActivityLoginBinding
 
-//    ActionBar
-    private lateinit var actionBar: ActionBar
+    //    ProgressDialog
+    private lateinit var progressDialog: ProgressDialog
 
-//    ProgressDialog
-    private lateinit var progressDialog:ProgressDialog
-
-//    FirebaseAuth
+    //    FirebaseAuth
     private lateinit var firebaseAuth: FirebaseAuth
     private var email = ""
     private var password = ""
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        //Remove title bar
-        this.requestWindowFeature(Window.FEATURE_NO_TITLE)
-    binding = ActivityLoginBinding.inflate(layoutInflater)
+        binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
-    // configure actionBar
-    actionBar = supportActionBar!!
-    actionBar.title = "Login"
+        // configure progress dialog
+        progressDialog = ProgressDialog(this)
+        progressDialog.setTitle("Please wait")
+        progressDialog.setMessage("Logging In...")
+        progressDialog.setCanceledOnTouchOutside(false)
 
-    // configure progress dialog
-    progressDialog = ProgressDialog(this)
-    progressDialog.setTitle("Please wait")
-    progressDialog.setMessage("Logging In...")
-    progressDialog.setCanceledOnTouchOutside(false)
-
-    // init firebaseAuth
+        // init firebaseAuth
         firebaseAuth = FirebaseAuth.getInstance()
         checkUser()
 
@@ -63,8 +49,9 @@ class LoginActivity : AppCompatActivity() {
             // before logging in, validate data
             validateData()
         }
-    }
 
+
+    }
     private fun validateData() {
 
         // get data
@@ -103,7 +90,7 @@ class LoginActivity : AppCompatActivity() {
                     Toast.LENGTH_LONG).show()
 
                 // open profile
-                startActivity(Intent(this, ProfileActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
             .addOnFailureListener { e->
@@ -123,7 +110,7 @@ class LoginActivity : AppCompatActivity() {
         if (firebaseUser != null){
 
             // user is already logged in
-            startActivity(Intent(this,ProfileActivity::class.java))
+            startActivity(Intent(this,MainActivity::class.java))
             finish()
         }
     }

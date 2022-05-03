@@ -1,31 +1,23 @@
 package com.example.firebaselogin
 
 import android.content.Intent
-import android.os.Bundle
-import androidx.appcompat.app.ActionBar
 import androidx.appcompat.app.AppCompatActivity
-import com.example.firebaselogin.databinding.ActivityProfileBinding
+import android.os.Bundle
+import com.example.firebaselogin.databinding.ActivityMainBinding
 import com.google.firebase.auth.FirebaseAuth
 
-class ProfileActivity : AppCompatActivity() {
+class MainActivity : AppCompatActivity() {
 
-    //  ViewBinding
-    private lateinit var binding: ActivityProfileBinding
-
-    //  ActionBar
-    private lateinit var actionBar: ActionBar
+    // viewBinding
+    private lateinit var binding: ActivityMainBinding
 
     //  FirebaseAuth
     private lateinit var firebaseAuth: FirebaseAuth
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityProfileBinding.inflate(layoutInflater)
+        binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-        // Configure ActionBar
-        actionBar = supportActionBar!!
-        actionBar.title = "Profile"
+        supportActionBar?.hide()
 
         // init firebase auth
         firebaseAuth = FirebaseAuth.getInstance()

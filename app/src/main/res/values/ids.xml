@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <item name="loginBtn" type="id">loginBtn</item>
-    <item name="noAccountTv" type="id">noAccountTv</item>
+    <item name="titleLabelTv" type="id">titleLabelTv</item>
+    <item name="ConfPasswordEt" type="id">ConfPasswordEt</item>
 </resources>

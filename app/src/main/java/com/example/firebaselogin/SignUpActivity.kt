@@ -1,22 +1,17 @@
-@file:Suppress("DEPRECATION")
-
 package com.example.firebaselogin
-
 
 import android.app.ProgressDialog
 import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
 import androidx.appcompat.app.ActionBar
-import androidx.appcompat.app.AppCompatActivity
 import com.example.firebaselogin.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 
-// @Suppress("DEPRECATION", "DEPRECATION")
 class SignUpActivity : AppCompatActivity() {
-
     // ViewBinding
     private lateinit var binding: ActivitySignUpBinding
 
@@ -30,16 +25,14 @@ class SignUpActivity : AppCompatActivity() {
     private lateinit var firebaseAuth: FirebaseAuth
     private var email = ""
     private var password = ""
-    private var confirmPass = ""
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivitySignUpBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
-        // configure Actionbar, // enable back button
-        actionBar = supportActionBar!!
-        actionBar.title = "Sign Up"
+
         actionBar.setDisplayHomeAsUpEnabled(true)
         actionBar.setDisplayShowHomeEnabled(true)
 
@@ -63,7 +56,6 @@ class SignUpActivity : AppCompatActivity() {
         // get data
         email = binding.emailEt.text.toString().trim()
         password = binding.passwordEt.text.toString().trim()
-        confirmPass =  binding.ConfPasswordEt.text.toString().trim()
 
         // validate data
         if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
@@ -72,12 +64,6 @@ class SignUpActivity : AppCompatActivity() {
         } else if (TextUtils.isEmpty(password)) {
             // password isn't entered
             binding.passwordEt.error = "Please enter password"
-        } else if (TextUtils.isEmpty(confirmPass)){
-            // password isn't confirmed
-            binding.ConfPasswordEt.error = "Please confirm password"
-        } else if(password != confirmPass) {
-            binding.passwordEt.error = "Password must be the same as confirm password"
-            binding.ConfPasswordEt.error = "Password must be the same as confirm password"
         } else if (password.length < 6){
             // password is less than 6
             binding.passwordEt.error = "Password must at least 6 characters long"
@@ -104,7 +90,7 @@ class SignUpActivity : AppCompatActivity() {
                     Toast.LENGTH_LONG).show()
 
                 // open profile
-                startActivity(Intent(this, ProfileActivity::class.java))
+                startActivity(Intent(this, MainActivity::class.java))
                 finish()
             }
             .addOnFailureListener { e->
@@ -122,4 +108,5 @@ class SignUpActivity : AppCompatActivity() {
         onBackPressed()
         return super.onSupportNavigateUp()
     }
+
 }

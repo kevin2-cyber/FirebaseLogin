@@ -7,20 +7,20 @@
     android:padding="20dp"
     android:gravity="center"
     android:background="#C1DCF1"
-    tools:context=".ProfileActivity">
+    tools:context=".MainActivity">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login Successful"
         android:layout_marginBottom="50dp"
-        android:fontFamily="@font/montserrat_semibold"
+        android:fontFamily="@font/red_rose"
         android:textColor="#445BDC"/>
     <TextView
         style="@style/TextAppearance.MaterialComponents.Caption"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_semibold"
+        android:fontFamily="@font/red_rose"
         android:text="You're logged in as"
         android:textColor="#8291E4"/>
 
@@ -29,7 +29,7 @@
         style="@style/TextAppearance.MaterialComponents.Body1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="@font/montserrat_semibold"
+        android:fontFamily="@font/red_rose"
         android:text="Email"
         android:textColor="#7D8CDF"/>
 
@@ -38,9 +38,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
-        android:fontFamily="@font/montserrat_semibold"
+        android:fontFamily="@font/red_rose"
         android:text="Logout"
-        android:background="@drawable/logoutbtn_style"
+        android:background="@drawable/logout_btn"
         android:textAllCaps="false"/>
 
 </LinearLayout>

@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/montserrat_semibold"
+        android:fontFamily="@font/red_rose"
         android:text="Login" />
 
     <TextView
@@ -23,11 +23,11 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/titleLabelTv"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/montserrat_semibold"
-        android:text="@string/logging" />
+        android:fontFamily="@font/red_rose"
+        android:text="Log into your account" />
 
 
-<!--Email-->
+    <!--Email-->
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/emailTil"
         android:layout_width="match_parent"
@@ -39,7 +39,7 @@
             android:id="@+id/emailEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_semibold"
+            android:fontFamily="@font/red_rose"
             android:hint="Email"
             android:textColor="#5468D6"
             android:importantForAutofill="no"
@@ -48,7 +48,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-<!--Password-->
+    <!--Password-->
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/passwordTil"
@@ -61,14 +61,14 @@
             android:id="@+id/passwordEt"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/montserrat_semibold"
+            android:fontFamily="@font/red_rose"
             android:hint="Password"
             android:textColor="#4859B8"
             android:inputType="textPassword"
             android:importantForAutofill="no" />
     </com.google.android.material.textfield.TextInputLayout>
 
-<!--Login button-->
+    <!--Login button-->
 
     <!--Not having account Sign up-->
 
@@ -79,7 +79,7 @@
         android:layout_below="@+id/passwordTil"
         android:layout_marginTop="25dp"
         android:background="@drawable/round_style"
-        android:fontFamily="@font/montserrat_semibold"
+        android:fontFamily="@font/red_rose"
         android:text="login"
         android:textColor="#8B93BF" />
 
@@ -90,7 +90,7 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:fontFamily="@font/montserrat_semibold"
+        android:fontFamily="@font/red_rose"
         android:padding="5dp"
         android:text="Not having an account?" />
 
@@ -104,7 +104,7 @@
         android:layout_marginTop="20dp"
         android:paddingEnd="63dp"
         android:layout_alignParentEnd="true"
-        android:fontFamily="@font/montserrat_semibold"
+        android:fontFamily="@font/red_rose"
         android:padding="5dp"
         android:text="Sign up"
         tools:ignore="RtlSymmetry" />

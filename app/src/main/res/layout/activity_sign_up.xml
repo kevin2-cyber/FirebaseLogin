@@ -14,6 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Sign Up"
+        android:fontFamily="@font/red_rose"
         style="@style/TextAppearance.MaterialComponents.Headline4"/>
 
     <TextView
@@ -21,6 +22,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:text="Create a New Account"
+        android:fontFamily="@font/red_rose"
         android:layout_below="@+id/titleLabelTv"
         style="@style/TextAppearance.MaterialComponents.Caption"/>
 
@@ -38,6 +40,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textEmailAddress"
+            android:fontFamily="@font/red_rose"
             android:hint="Email"/>
 
     </com.google.android.material.textfield.TextInputLayout>
@@ -56,25 +59,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textPassword"
+            android:fontFamily="@font/red_rose"
             android:hint="Password"/>
     </com.google.android.material.textfield.TextInputLayout>
 
-    <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/confPasswordTil"
-        app:passwordToggleEnabled="true"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/passwordTil"
-        android:layout_centerInParent="true">
 
-        <EditText
-            android:id="@+id/ConfPasswordEt"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:inputType="textPassword"
-            android:fontFamily="@font/montserrat_semibold"
-            android:hint="Confirm Password"/>
-    </com.google.android.material.textfield.TextInputLayout>
 
     <!--Sign Up button-->
     <Button
@@ -82,10 +71,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Sign Up"
-        android:fontFamily="@font/montserrat_semibold"
+        android:fontFamily="@font/red_rose"
         android:textFontWeight="500"
         android:textColor="#8B93BF"
-        android:layout_below="@+id/confPasswordTil"
+        android:layout_below="@+id/passwordTil"
         android:background="@drawable/round_style"
         android:layout_marginTop="10dp"/>
 
