@@ -7,12 +7,16 @@ import android.os.Bundle
 import android.text.TextUtils
 import android.util.Patterns
 import android.widget.Toast
+import androidx.appcompat.app.ActionBar
 import com.example.firebaselogin.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class SignUpActivity : AppCompatActivity() {
     // ViewBinding
     private lateinit var binding: ActivitySignUpBinding
+
+    // ActionBar
+    private lateinit var actionBar: ActionBar
 
     // ProgressDialog
     private lateinit var progressDialog: ProgressDialog
@@ -28,8 +32,8 @@ class SignUpActivity : AppCompatActivity() {
         setContentView(binding.root)
 
 
-        actionBar?.setDisplayHomeAsUpEnabled(true)
-        actionBar?.setDisplayShowHomeEnabled(true)
+        actionBar.setDisplayHomeAsUpEnabled(true)
+        actionBar.setDisplayShowHomeEnabled(true)
 
         // configure progress dialog
         progressDialog = ProgressDialog(this)
