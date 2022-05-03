@@ -15,9 +15,6 @@ class LoginActivity : AppCompatActivity() {
     //    ViewBinding
     private lateinit var binding: ActivityLoginBinding
 
-    //    ActionBar
-    private lateinit var actionBar: ActionBar
-
     //    ProgressDialog
     private lateinit var progressDialog: ProgressDialog
 
@@ -29,6 +26,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
 
         // configure progress dialog
         progressDialog = ProgressDialog(this)
