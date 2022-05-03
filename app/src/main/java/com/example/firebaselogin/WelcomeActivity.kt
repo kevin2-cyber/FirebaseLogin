@@ -1,17 +1,23 @@
 package com.example.firebaselogin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.Window
-import android.view.WindowManager
+import com.example.firebaselogin.databinding.ActivityWelcomeBinding
 
 
 class WelcomeActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityWelcomeBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        binding = ActivityWelcomeBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        binding.welcomeBtn.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
         supportActionBar?.hide()
-//        this.requestWindowFeature(Window.FEATURE_NO_TITLE)
-//        this.window.setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN)
-        setContentView(R.layout.activity_welcome)
     }
 }
