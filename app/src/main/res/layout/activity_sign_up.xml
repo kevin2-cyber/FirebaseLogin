@@ -78,6 +78,32 @@
         android:background="@drawable/round_style"
         android:layout_marginTop="10dp"/>
 
+    <TextView
+        android:id="@+id/accountTv"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/red_rose"
+        android:padding="5dp"
+        android:text=" Already having an account?" />
+
+    <TextView
+        android:id="@+id/account"
+        style="@style/TextAppearance.MaterialComponents.Caption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:paddingEnd="63dp"
+        android:layout_alignParentEnd="true"
+        android:fontFamily="@font/red_rose"
+        android:padding="5dp"
+        android:text="Sign in"
+        tools:ignore="RtlSymmetry" />
+
 
 
 
