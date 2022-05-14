@@ -16,6 +16,7 @@
         android:text="Firebase login app using Kotlin"
         android:fontFamily="@font/red_rose"
         tools:ignore="HardcodedText" />
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/welcomeBtn"

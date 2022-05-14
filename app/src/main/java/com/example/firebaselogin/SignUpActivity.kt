@@ -52,6 +52,11 @@ class SignUpActivity : AppCompatActivity() {
             // validate data
             validateData()
         }
+
+        // navigate to login activity
+        binding.account.setOnClickListener {
+            startActivity(Intent(this, LoginActivity::class.java))
+        }
     }
 
     private fun validateData() {
