@@ -14,7 +14,8 @@
         android:gravity="center"
         android:layout_marginTop="60dp"
         android:text="Firebase login app using Kotlin"
-        android:fontFamily="@font/red_rose"/>
+        android:fontFamily="@font/red_rose"
+        tools:ignore="HardcodedText" />
 
     <Button
         android:id="@+id/welcomeBtn"
@@ -27,6 +28,7 @@
         android:fontFamily="@font/red_rose"
         android:text="Welcome"
         android:textAllCaps="false"
-        android:textSize="20sp" />
+        android:textSize="20sp"
+        tools:ignore="HardcodedText" />
 
 </RelativeLayout>
