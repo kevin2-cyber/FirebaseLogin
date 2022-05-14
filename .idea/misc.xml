@@ -9,10 +9,10 @@
         <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/font/.xml" value="0.2765625" />
         <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/layout-w1240dp/activity_login2.xml" value="0.15829986613119143" />
         <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/layout-w936dp/activity_login2.xml" value="0.184765625" />
-        <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/layout/activity_login.xml" value="0.1078125" />
+        <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/layout/activity_login.xml" value="0.264" />
         <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/layout/activity_login2.xml" value="0.24635416666666668" />
         <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/layout/activity_main.xml" value="0.23229166666666667" />
-        <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/layout/activity_sign_up.xml" value="0.1078125" />
+        <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/layout/activity_sign_up.xml" value="0.264" />
         <entry key="..\:/Users/Kevin/Desktop/github/FirebaseLogin/app/src/main/res/layout/activity_welcome.xml" value="0.264" />
       </map>
     </option>
@@ -22,5 +22,10 @@
   </component>
   <component name="ProjectType">
     <option name="id" value="Android" />
+  </component>
+  <component name="SwUserDefinedSpecifications">
+    <option name="specTypeByUrl">
+      <map />
+    </option>
   </component>
 </project>
