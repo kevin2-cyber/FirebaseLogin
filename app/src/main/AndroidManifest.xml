@@ -12,7 +12,8 @@
         android:theme="@style/Theme.FirebaseLogin" >
         <activity
             android:name=".SignUpActivity"
-            android:exported="false" />
+            android:exported="false" >
+        </activity>
         <activity
             android:name=".WelcomeActivity"
             android:exported="true" >
