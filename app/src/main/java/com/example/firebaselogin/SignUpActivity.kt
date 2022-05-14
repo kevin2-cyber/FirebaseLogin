@@ -12,6 +12,7 @@ import com.example.firebaselogin.databinding.ActivitySignUpBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class SignUpActivity : AppCompatActivity() {
+
     // ViewBinding
     private lateinit var binding: ActivitySignUpBinding
 
@@ -23,6 +24,7 @@ class SignUpActivity : AppCompatActivity() {
 
     // FirebaseAuth
     private lateinit var firebaseAuth: FirebaseAuth
+
     private var email = ""
     private var password = ""
 

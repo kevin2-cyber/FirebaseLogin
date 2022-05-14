@@ -8,6 +8,7 @@ import com.example.firebaselogin.databinding.ActivityWelcomeBinding
 
 class WelcomeActivity : AppCompatActivity() {
 
+    // ViewBinding
     private lateinit var binding: ActivityWelcomeBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {

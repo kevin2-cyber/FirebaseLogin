@@ -12,6 +12,7 @@ import com.example.firebaselogin.databinding.ActivityLoginBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class LoginActivity : AppCompatActivity() {
+
     //    ViewBinding
     private lateinit var binding: ActivityLoginBinding
 
@@ -20,8 +21,10 @@ class LoginActivity : AppCompatActivity() {
 
     //    FirebaseAuth
     private lateinit var firebaseAuth: FirebaseAuth
+
     private var email = ""
     private var password = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityLoginBinding.inflate(layoutInflater)

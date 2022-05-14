@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
 
     //  FirebaseAuth
     private lateinit var firebaseAuth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
